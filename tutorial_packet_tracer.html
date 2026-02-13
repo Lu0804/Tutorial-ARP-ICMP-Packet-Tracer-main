@@ -851,7 +851,112 @@ Ping statistics for 192.168.0.20:
                 <li><strong>Analizza la dimensione dei pacchetti</strong> cambiando la dimensione del ping con l'opzione <code>-l</code> (es. <code>ping -l 1000 192.168.0.20</code>)</li>
             </ol>
         </div>
+<!-- SEZIONE SVOLGIMENTO ESERCIZI AVANZATI -->
+<h2>📝 Svolgimento Esercizi Avanzati</h2>
 
+<div class="warning">
+    <strong>⚠️ Istruzioni:</strong> Completa i seguenti esercizi (escluso il punto 4) e documenta i risultati con screenshot.
+</div>
+
+<!-- ESERCIZIO 1 -->
+<div class="step">
+    <div>
+        <span class="step-number">E1</span>
+        <span class="step-title">Aggiunta di un Terzo PC (IP 192.168.0.30)</span>
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 1: Topologia con tre PC collegati
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 2: MAC Address Table dello switch
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 3: Event List con il traffico
+    </div>
+</div>
+
+<!-- ESERCIZIO 2 -->
+<div class="step">
+    <div>
+        <span class="step-number">E2</span>
+        <span class="step-title">Configurazione IP Errato (192.168.1.20)</span>
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 1: Configurazione IP errato su PC1
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 2: Risultato del ping fallito
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 3: Comportamento ARP
+    </div>
+</div>
+
+<!-- ESERCIZIO 3 -->
+<div class="step">
+    <div>
+        <span class="step-number">E3</span>
+        <span class="step-title">Sostituzione Switch con Hub</span>
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 1: Topologia con Hub
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 2: Comportamento dell'Hub durante il ping
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 3: Confronto traffico Hub vs Switch
+    </div>
+</div>
+
+<!-- ESERCIZIO 5 -->
+<div class="step">
+    <div>
+        <span class="step-number">E5</span>
+        <span class="step-title">Ping Continuo con Filtro ICMP (ping -t)</span>
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 1: Filtri con solo ICMP selezionato
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 2: Event List con sequenze ICMP multiple
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 3: Sequence Numbers incrementali
+    </div>
+</div>
+
+<!-- ESERCIZIO 6 -->
+<div class="step">
+    <div>
+        <span class="step-number">E6</span>
+        <span class="step-title">Dimensione Pacchetti (ping -l 1000)</span>
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 1: PDU Information ping normale (32 bytes)
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 2: Comando ping -l 1000
+    </div>
+    
+    <div class="screenshot-placeholder">
+        📸 Screenshot 3: PDU Information ping con 1000 bytes
+    </div>
+</div>
         <h2>❓ FAQ - Domande Frequenti</h2>
         
         <h3>Q: Perché il primo ping spesso fallisce?</h3>
@@ -869,6 +974,74 @@ Ping statistics for 192.168.0.20:
         <h3>Q: Come posso vedere la MAC Address Table dello switch?</h3>
         <p><strong>A:</strong> Clicca sullo switch, vai alla scheda "CLI" e digita:
             <div class="code-block">
+		<!-- SEZIONE RISPOSTE COMMENTATE ALLE FAQ -->
+<!-- SEZIONE RISPOSTE COMMENTATE ALLE FAQ -->
+<h2>📋 Risposte Commentate alle Domande Frequenti</h2>
+
+<!-- DOMANDA 1 -->
+<div class="step">
+    <div>
+        <span class="step-number">Q1</span>
+        <span class="step-title">Perché il primo ping spesso fallisce?</span>
+    </div>
+    
+    <h3>💬 Commento alla risposta:</h3>
+    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #999; font-style: italic;">[Spiega il motivo, il ruolo di ARP, timing, cosa hai osservato durante gli esercizi, ecc.]</p>
+    </div>
+</div>
+
+<!-- DOMANDA 2 -->
+<div class="step">
+    <div>
+        <span class="step-number">Q2</span>
+        <span class="step-title">Cos'è il TTL e perché è importante?</span>
+    </div>
+    
+    <h3>💬 Commento alla risposta:</h3>
+    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #999; font-style: italic;">[Definisci TTL, spiega la sua funzione, cosa hai visto nei pacchetti analizzati, importanza nella prevenzione dei loop, ecc.]</p>
+    </div>
+</div>
+
+<!-- DOMANDA 3 -->
+<div class="step">
+    <div>
+        <span class="step-number">Q3</span>
+        <span class="step-title">Perché ICMP non ha porte come TCP o UDP?</span>
+    </div>
+    
+    <h3>💬 Commento alla risposta:</h3>
+    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #999; font-style: italic;">[Spiega la differenza tra Layer 3 e Layer 4, uso del campo "Type" in ICMP vs porte in TCP/UDP, ecc.]</p>
+    </div>
+</div>
+
+<!-- DOMANDA 4 -->
+<div class="step">
+    <div>
+        <span class="step-number">Q4</span>
+        <span class="step-title">Cosa succede se due PC hanno lo stesso IP?</span>
+    </div>
+    
+    <h3>💬 Commento alla risposta:</h3>
+    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #999; font-style: italic;">[Descrivi il conflitto IP, conseguenze, comportamento di ARP, come i sistemi operativi gestiscono il problema, ecc.]</p>
+    </div>
+</div>
+
+<!-- DOMANDA 5 -->
+<div class="step">
+    <div>
+        <span class="step-number">Q5</span>
+        <span class="step-title">Come posso vedere la MAC Address Table dello switch?</span>
+    </div>
+    
+    <h3>💬 Commento alla risposta:</h3>
+    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #999; font-style: italic;">[Spiega i comandi CLI utilizzati, cosa mostra la tabella, processo di learning degli indirizzi MAC, ecc.]</p>
+    </div>
+</div>
 enable
 show mac address-table
             </div>
@@ -910,5 +1083,6 @@ show mac address-table
             <p>Versione 1.0</p>
         </div>
     </div>
+	
 </body>
 </html>
