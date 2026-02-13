@@ -428,8 +428,7 @@ Default Gateway: (lascia vuoto o 192.168.0.1)
                 <strong>💡 Cos'è la Modalità Simulazione?</strong><br>
                 La modalità simulazione permette di visualizzare passo-passo il movimento dei pacchetti attraverso la rete, consentendo l'analisi dettagliata di ogni fase della comunicazione.
             </div>
-            
-            <div class="screenshot-placeholder">
+           <div class="screenshot-placeholder">
                 <img src="simulation_eventList_screenshot.png">
             </div>
         </div>
@@ -851,6 +850,7 @@ Ping statistics for 192.168.0.20:
                 <li><strong>Analizza la dimensione dei pacchetti</strong> cambiando la dimensione del ping con l'opzione <code>-l</code> (es. <code>ping -l 1000 192.168.0.20</code>)</li>
             </ol>
         </div>
+
 <!-- SEZIONE SVOLGIMENTO ESERCIZI AVANZATI -->
 <h2>📝 Svolgimento Esercizi Avanzati</h2>
 
@@ -957,6 +957,7 @@ Ping statistics for 192.168.0.20:
         📸 Screenshot 3: PDU Information ping con 1000 bytes
     </div>
 </div>
+
         <h2>❓ FAQ - Domande Frequenti</h2>
         
         <h3>Q: Perché il primo ping spesso fallisce?</h3>
@@ -974,7 +975,11 @@ Ping statistics for 192.168.0.20:
         <h3>Q: Come posso vedere la MAC Address Table dello switch?</h3>
         <p><strong>A:</strong> Clicca sullo switch, vai alla scheda "CLI" e digita:
             <div class="code-block">
-		<!-- SEZIONE RISPOSTE COMMENTATE ALLE FAQ -->
+enable
+show mac address-table
+            </div>
+        </p>
+
 <!-- SEZIONE RISPOSTE COMMENTATE ALLE FAQ -->
 <h2>📋 Risposte Commentate alle Domande Frequenti</h2>
 
@@ -986,8 +991,8 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #999; font-style: italic;">[Spiega il motivo, il ruolo di ARP, timing, cosa hai osservato durante gli esercizi, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #666; font-style: italic;">[Spiega il motivo, il ruolo di ARP, timing, cosa hai osservato durante gli esercizi, ecc.]</p>
     </div>
 </div>
 
@@ -999,8 +1004,8 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #999; font-style: italic;">[Definisci TTL, spiega la sua funzione, cosa hai visto nei pacchetti analizzati, importanza nella prevenzione dei loop, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #666; font-style: italic;">[Definisci TTL, spiega la sua funzione, cosa hai visto nei pacchetti analizzati, importanza nella prevenzione dei loop, ecc.]</p>
     </div>
 </div>
 
@@ -1012,8 +1017,8 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #999; font-style: italic;">[Spiega la differenza tra Layer 3 e Layer 4, uso del campo "Type" in ICMP vs porte in TCP/UDP, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #666; font-style: italic;">[Spiega la differenza tra Layer 3 e Layer 4, uso del campo "Type" in ICMP vs porte in TCP/UDP, ecc.]</p>
     </div>
 </div>
 
@@ -1025,8 +1030,8 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #999; font-style: italic;">[Descrivi il conflitto IP, conseguenze, comportamento di ARP, come i sistemi operativi gestiscono il problema, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #666; font-style: italic;">[Descrivi il conflitto IP, conseguenze, comportamento di ARP, come i sistemi operativi gestiscono il problema, ecc.]</p>
     </div>
 </div>
 
@@ -1038,14 +1043,10 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: white; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #999; font-style: italic;">[Spiega i comandi CLI utilizzati, cosa mostra la tabella, processo di learning degli indirizzi MAC, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
+        <p style="color: #666; font-style: italic;">[Spiega i comandi CLI utilizzati, cosa mostra la tabella, processo di learning degli indirizzi MAC, ecc.]</p>
     </div>
 </div>
-enable
-show mac address-table
-            </div>
-        </p>
 
         <h2>📚 Risorse Aggiuntive</h2>
         
