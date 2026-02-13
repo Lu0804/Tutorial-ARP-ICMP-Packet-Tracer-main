@@ -882,12 +882,11 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <div class="screenshot-placeholder">
-        Configurazione IP errato su PC1
 		<img src="pingErrato_avanzato_screenshot.png">
     </div>
     
     <div class="screenshot-placeholder">
-        Risultato del ping fallito eComportamento ARP
+
 		 <img src="comportamentoARP_avanzato_screenshot.png">
     </div>
     
@@ -901,12 +900,12 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <div class="screenshot-placeholder">
-       Topologia con Hub
+
 	   <img src="collegamento_HUBavanzato_screenshot.png">
     </div>
     
     <div class="screenshot-placeholder">
-      Comportamento dell'Hub durante il ping
+
 	  <img src="pingHUB_avanzato_screenshot.png">
     </div>
 </div>
@@ -919,12 +918,12 @@ Ping statistics for 192.168.0.20:
     </div>
    
     <div class="screenshot-placeholder">
-       Filtri con solo ICMP selezionato
+     
 	  <img src="ping_avanzato_screenshot.png">
     </div>
     
     <div class="screenshot-placeholder">
-     Event List con sequenze ICMP multiple
+    
 	  <img src="ping_eventList_screenshot.png">
     </div>
     
@@ -938,15 +937,13 @@ Ping statistics for 192.168.0.20:
     </div>
     
     <div class="screenshot-placeholder">
-     PDU Information ping normale (32 bytes)
-    </div>
-    
-    <div class="screenshot-placeholder">
       Comando ping -l 1000
+	  
     </div>
     
     <div class="screenshot-placeholder">
       PDU Information ping con 1000 bytes
+	  
     </div>
 </div>
 
@@ -972,10 +969,8 @@ show mac address-table
             </div>
         </p>
 
-<!-- SEZIONE RISPOSTE COMMENTATE ALLE FAQ -->
 <h2>📋 Risposte Commentate alle Domande Frequenti</h2>
 
-<!-- DOMANDA 1 -->
 <div class="step">
     <div>
         <span class="step-number">Q1</span>
@@ -983,12 +978,13 @@ show mac address-table
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #666; font-style: italic;">[Spiega il motivo, il ruolo di ARP, timing, cosa hai osservato durante gli esercizi, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 100px; padding: 20px; margin: 20px 0;">
+        <p style="color: #2c3e50; font-style: normal; font-weight: 500; margin: 0;">
+            Il PC conosce l'IP ma non il MAC address del destinatario. Deve fare una ricerca (ARP) per trovarlo. Questa operazione richiede tempo e fa scadere il primo pacchetto. I successivi funzionano perché il MAC viene memorizzato.
+        </p>
     </div>
 </div>
 
-<!-- DOMANDA 2 -->
 <div class="step">
     <div>
         <span class="step-number">Q2</span>
@@ -996,12 +992,13 @@ show mac address-table
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #666; font-style: italic;">[Definisci TTL, spiega la sua funzione, cosa hai visto nei pacchetti analizzati, importanza nella prevenzione dei loop, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 100px; padding: 20px; margin: 20px 0;">
+        <p style="color: #2c3e50; font-style: normal; font-weight: 500; margin: 0;">
+            È la "vita" del pacchetto. Serve a evitare che i dati girino all'infinito nella rete se c'è un errore di percorso. Quando il TTL arriva a 0, il pacchetto viene cancellato.
+        </p>
     </div>
 </div>
 
-<!-- DOMANDA 3 -->
 <div class="step">
     <div>
         <span class="step-number">Q3</span>
@@ -1009,12 +1006,13 @@ show mac address-table
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #666; font-style: italic;">[Spiega la differenza tra Layer 3 e Layer 4, uso del campo "Type" in ICMP vs porte in TCP/UDP, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 100px; padding: 20px; margin: 20px 0;">
+        <p style="color: #2c3e50; font-style: normal; font-weight: 500; margin: 0;">
+            Perché le porte servono a parlare con specifiche applicazioni (come browser o giochi). ICMP serve solo a controllare la salute della rete, quindi non ha bisogno di porte.
+        </p>
     </div>
 </div>
 
-<!-- DOMANDA 4 -->
 <div class="step">
     <div>
         <span class="step-number">Q4</span>
@@ -1022,12 +1020,13 @@ show mac address-table
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #666; font-style: italic;">[Descrivi il conflitto IP, conseguenze, comportamento di ARP, come i sistemi operativi gestiscono il problema, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 100px; padding: 20px; margin: 20px 0;">
+        <p style="color: #2c3e50; font-style: normal; font-weight: 500; margin: 0;">
+            Si crea un conflitto. La rete va in confusione perché non sa a quale dei due PC consegnare i dati. Di solito appare un errore e la connessione smette di funzionare.
+        </p>
     </div>
 </div>
 
-<!-- DOMANDA 5 -->
 <div class="step">
     <div>
         <span class="step-number">Q5</span>
@@ -1035,8 +1034,10 @@ show mac address-table
     </div>
     
     <h3>💬 Commento alla risposta:</h3>
-    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 120px; padding: 20px; margin: 20px 0;">
-        <p style="color: #666; font-style: italic;">[Spiega i comandi CLI utilizzati, cosa mostra la tabella, processo di learning degli indirizzi MAC, ecc.]</p>
+    <div style="background: #f8f9fa; border: 2px solid #3498db; border-radius: 8px; min-height: 100px; padding: 20px; margin: 20px 0;">
+        <p style="color: #2c3e50; font-style: normal; font-weight: 500; margin: 0;">
+            Entrando nella riga di comando dello switch e scrivendo <code>show mac-address-table</code>. Questo comando ti mostra l'elenco dei dispositivi collegati e su quale porta si trovano.
+        </p>
     </div>
 </div>
 
